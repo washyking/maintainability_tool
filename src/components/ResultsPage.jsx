@@ -1,8 +1,11 @@
 import { useEffect, useState } from 'preact/hooks';
 import { Chart } from 'chart.js/auto';
+import Tab from './Tab'; // Import the Tab component
 
 const ResultsPage = () => {
   const [data, setData] = useState(null);
+  const [activeTab, setActiveTab] = useState('lighthouse'); // Default active tab
+  const baseUrl = 'http://localhost:8080';
 
   useEffect(() => {
     // Fetch results.json
@@ -12,60 +15,108 @@ const ResultsPage = () => {
       .catch((err) => console.error('Error loading results.json:', err));
   }, []);
 
-  useEffect(() => {
-    if (data) {
-      // Create Chart after data is loaded
-      const canvasElement = document.getElementById('lighthouseChart');
-      if (canvasElement instanceof HTMLCanvasElement) {
-        const ctx = canvasElement.getContext('2d');
-        new Chart(ctx, {
-          type: 'bar',
-          data: {
-            labels: Object.keys(data).map((url) => url), // Page URLs
-            datasets: [
-              {
-                label: 'Performance',
-                data: Object.values(data).map((metrics) => metrics.performance.score * 100),
-                backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                borderColor: 'rgba(75, 192, 192, 1)',
-                borderWidth: 1,
-              },
-              {
-                label: 'Accessibility',
-                data: Object.values(data).map((metrics) => metrics.accessibility.score * 100),
-                backgroundColor: 'rgba(153, 102, 255, 0.2)',
-                borderColor: 'rgba(153, 102, 255, 1)',
-                borderWidth: 1,
-              },
-              {
-                label: 'SEO',
-                data: Object.values(data).map((metrics) => metrics.seo.score * 100),
-                backgroundColor: 'rgba(255, 159, 64, 0.2)',
-                borderColor: 'rgba(255, 159, 64, 1)',
-                borderWidth: 1,
-              },
-            ],
-          },
-          options: {
-            responsive: true,
-            plugins: {
-              legend: {
-                position: 'top',
-              },
-              title: {
-                display: true,
-                text: 'Lighthouse Metrics',
+  const renderChart = (toolData) => {
+    const canvasElement = document.getElementById('lighthouseChart');
+    if (canvasElement instanceof HTMLCanvasElement) {
+      const ctx = canvasElement.getContext('2d');
+
+      // Shorten URLs for X-axis labels
+      const shortenedLabels = Object.keys(toolData).map(url => 
+        url.replace(baseUrl, '').replace(/^\//, '')
+      );
+
+      // Optional: Truncate long labels
+      const truncateLabel = (label, maxLength = 15) => {
+        return label.length > maxLength ? label.slice(0, maxLength) + '...' : label;
+      };
+      const truncatedLabels = shortenedLabels.map(label => truncateLabel(label));
+
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: truncatedLabels,
+          datasets: [
+            {
+              label: 'Performance',
+              data: Object.values(toolData).map((metrics) => metrics.performance.score * 100),
+              backgroundColor: '#4BC0C0',
+              borderColor: '#36A2EB',
+              borderWidth: 1,
+            },
+            {
+              label: 'Accessibility',
+              data: Object.values(toolData).map((metrics) => metrics.accessibility.score * 100),
+              backgroundColor: '#FF6384',
+              borderColor: '#FF6384',
+              borderWidth: 1,
+            },
+            {
+              label: 'SEO',
+              data: Object.values(toolData).map((metrics) => metrics.seo.score * 100),
+              backgroundColor: '#FFCE56',
+              borderColor: '#FFCE56',
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              position: 'top',
+            },
+            title: {
+              display: true,
+              text: `Metrics for ${activeTab.charAt(0).toUpperCase() + activeTab.slice(1)}`,
+            },
+            tooltip: {
+              callbacks: {
+                title: (context) => {
+                  const fullUrl = Object.keys(toolData)[context[0].dataIndex];
+                  return `Page: ${fullUrl}`;
+                },
+                label: (context) => {
+                  return `${context.dataset.label}: ${context.raw}`;
+                },
               },
             },
           },
-        });
-      }
+          scales: {
+            x: {
+              title: {
+                display: true,
+                text: 'URLs',
+              },
+            },
+            y: {
+              title: {
+                display: true,
+                text: 'Lighthouse score: 0–100',
+              },
+              grid: {
+                color: 'rgba(0, 0, 0, 0.1)',
+              },
+            },
+          },
+        },
+      });
     }
-  }, [data]);
+  };
+
+  useEffect(() => {
+    if (data) {
+      renderChart(data[activeTab]); // Render chart for the active tab
+    }
+  }, [data, activeTab]);
 
   return (
     <div>
       <h1>Lighthouse Results</h1>
+      <Tab 
+        tabs={['lighthouse', 'tool2', 'tool3']} // Add more tools as needed
+        activeTab={activeTab}
+        onTabChange={setActiveTab}
+      />
       <canvas id="lighthouseChart" width="400" height="200"></canvas>
       {!data && <p>Loading results...</p>}
     </div>
