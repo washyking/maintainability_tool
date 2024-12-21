@@ -1,0 +1,39 @@
+.navbar {
+  background-color: #2980b9; /* Navbar background color */
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.navbar-list {
+  list-style-type: none; /* Remove default list styling */
+  display: flex; /* Display items in a row */
+  justify-content: space-around; /* Space items evenly */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.navbar-list li {
+  margin: 0 15px; /* Space between items */
+  transition: transform 0.3s, background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+.navbar-list a {
+  color: white; /* Link color */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.2em; /* Font size */
+  padding: 10px 15px; /* Padding for clickable area */
+  border-radius: 5px; /* Rounded corners */
+  display: inline-block; /* Make the link a block for padding */
+}
+
+.navbar-list .active a {
+  font-weight: bold; /* Bold text for active link */
+  text-decoration: underline; /* Underline for active link */
+  background-color: #1abc9c; /* Different background for active link */
+}
+
+.navbar-list a:hover {
+  background-color: #1abc9c; /* Change background color on hover */
+  color: #fff; /* Ensure text color is white on hover */
+  transform: scale(1.1); /* Slightly increase size on hover */
+} 

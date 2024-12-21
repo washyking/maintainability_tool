@@ -3,12 +3,16 @@ import path from 'path';
 import fs from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
+import bodyParser from 'body-parser';
+import { exec } from 'child_process';
 
 const app = express();
 const PORT = process.env.PORT || 5001;
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
+
+app.use(bodyParser.json());
 
 // Serve Lighthouse reports
 app.get('/lighthouse-results', (req, res) => {
@@ -36,6 +40,20 @@ app.get('/api/metrics', (req, res) => {
 
 app.use('/lighthouse-reports', express.static(path.join(__dirname, '../../public/lighthouse-reports')));
 
+// Endpoint to run ESLint
+app.post("/run-eslint", (req, res) => {
+  const { projectPath } = req.body; // Ensure `projectPath` is sent from frontend
+  const eslintScriptPath = path.resolve(__dirname, 'run-eslint.js'); // Get the path to run-eslint.js
+
+  exec(`node ${eslintScriptPath} ${projectPath}`, (error, stdout, stderr) => {
+    if (error) {
+      console.error(`Error running ESLint: ${stderr}`);
+      return res.status(500).send({ error: stderr });
+    }
+    console.log(`ESLint output: ${stdout}`);
+    res.send({ success: true, message: "ESLint analysis completed." });
+  });
+});
 
 app.listen(PORT, () => {
   console.log(`Server is running at http://localhost:${PORT}`);

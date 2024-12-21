@@ -1,0 +1,23 @@
+.redirect-container {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.redirect-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between buttons */
+}
+
+.redirect-button {
+  padding: 15px 30px;
+  background-color: #2980b9; /* Blue background */
+  color: white; /* White text */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  transition: background 0.3s; /* Smooth transition */
+}
+
+.redirect-button:hover {
+  background-color: #1abc9c; /* Change color on hover */
+} 

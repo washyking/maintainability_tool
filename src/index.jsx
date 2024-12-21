@@ -1,5 +1,20 @@
 import { render } from 'preact';
+import { Router, Route} from 'preact-router';
+
 import Home from './pages/Home';
+import LighthousePage from './pages/LightHousePage';
+import Navbar from './components/Navbar';
+import ESLintPage from './pages/ESlintPage';
+//import SonarQubePage from './pages/SonarCubePage';
 
+const App = () => (
+  <Router>
 
-render(<Home />, document.getElementById('app'));
+    <Route path="/" component={() => <><Navbar currentPath="/" /><Home /></>} />
+    <Route path="/lighthouse" component={() => <><Navbar currentPath="/lighthouse" /><LighthousePage /></>} />
+    <Route path="/eslint" component={() => <><Navbar currentPath="/eslint" /><ESLintPage /></>} />
+    <Route path="/sonarqube" component={() => <><Navbar currentPath="/sonarqube" /><SonarQubePage /></>} />
+  </Router>
+);
+
+render(<App />, document.getElementById('app'));
