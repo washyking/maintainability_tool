@@ -1,15 +1,35 @@
-# `create-preact`
+# Maintainability Tool
 
-<h2 align="center">
-  <img height="256" width="256" src="./src/assets/preact.svg">
-</h2>
+## Overview
+The **Maintainability Tool** is a analysis platform/tool designed to help developers identify and address maintainability issues in their JavaScript and lightweight framework projects, like Preact. By integrating multiple code quality tools, the platform provides actionable insights and promotes cleaner, more maintainable codebases.
 
-<h3 align="center">Get started using Preact and Vite!</h3>
+## Features
+- **ESLint Analysis**: Highlights errors and warnings for both custom rules (e.g., Preact-specific) and general JavaScript rules.
+- **SonarQube Integration**: Evaluates code smells, bugs, and other maintainability metrics at scale.
+- **Heatmap Visualization**: Displays the density of issues across project files, helping developers focus on the most problematic areas.
+- **Actionable Suggestions**: Provides targeted recommendations to improve code quality, with a focus on high-impact fixes.
+- **Summary Dashboards**: Visual summaries, including pie charts and tables, for an at-a-glance understanding of code health.
 
-## Getting Started
+## Purpose
+This tool is aimed at developers and teams looking to:
+- **Improve code maintainability** for lightweight frameworks like Preact.
+- **Identify and fix high-priority issues** in large codebases.
+- **Promote best practices** through actionable recommendations and summaries.
 
--   `npm run dev` - Starts a dev server at http://localhost:5173/
+## Built With
+- **Frontend**: React.js for UI components and visualisations.
+- **Visualisation Libraries**: Chart.js for charts and heatmap displays.
+- **Backend**: Node.js to process and aggregate data from tools like ESLint and SonarQube.
+- **Code Quality Tools**:
+  - **ESLint**: For customisable linting and error reporting.
+  - **SonarQube**: For deep code analysis and maintainability scoring.
 
--   `npm run build` - Builds for production, emitting to `dist/`. Prerenders all found routes in app to static HTML
+## How It Works
+1. **Analyse Code**: Run the tool on your codebase to collect linting errors, warnings, and SonarQube data.
+2. **Visualise Issues**: Use dashboards and heatmaps to pinpoint problematic files and rules.
+3. **Act on Recommendations**: Leverage actionable items to systematically improve the codebase.
 
--   `npm run preview` - Starts a server at http://localhost:4173/ to test production build locally
+## Future Enhancements
+- GitHub pull request analysis for tracking code quality changes over time.
+
+
