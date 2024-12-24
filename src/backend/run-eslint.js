@@ -9,8 +9,16 @@ const __dirname = path.dirname(__filename);
 
 const runESLint = async (projectPath) => {
   const eslint = new ESLint({
-    overrideConfigFile: path.resolve(__dirname, "../../.eslintrc.cjs"), // Adjusted path
-    useEslintrc: false,
+    useEslintrc: false, // Ignore the project's ESLint configurations
+    overrideConfigFile: path.resolve(__dirname, "../../.eslintrc.cjs"), // Use your custom configuration
+    resolvePluginsRelativeTo: __dirname, // Ensure plugins are resolved relative to your custom rules directory
+    overrideConfig: {
+      plugins: ["custom"], // Only use your custom plugin
+      rules: {
+        "custom/limit-prop-drill-depth": ["warn", { maxDepth: 3 }],
+        complexity: ["warn", 10],
+      },
+    },
   });
 
   console.log(`Running ESLint on: ${projectPath}`);

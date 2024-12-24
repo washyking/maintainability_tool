@@ -6,7 +6,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/app.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (12:2)",
+        "line": 12,
+        "column": 2,
         "nodeType": null
       }
     ],
@@ -26,7 +28,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/blog-meta/index.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (7:2)",
+        "line": 7,
+        "column": 2,
         "nodeType": null
       }
     ],
@@ -46,7 +50,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/blog-overview/index.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (13:2)",
+        "line": 13,
+        "column": 2,
         "nodeType": null
       }
     ],
@@ -66,7 +72,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/branding/index.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (6:2)",
+        "line": 6,
+        "column": 2,
         "nodeType": null
       }
     ],
@@ -86,7 +94,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/code-editor/index.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (96:8)",
+        "line": 96,
+        "column": 8,
         "nodeType": null
       }
     ],
@@ -106,7 +116,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/content-region/index.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (17:9)",
+        "line": 17,
+        "column": 9,
         "nodeType": null
       }
     ],
@@ -126,7 +138,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/controllers/blog-page.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (14:9)",
+        "line": 14,
+        "column": 9,
         "nodeType": null
       }
     ],
@@ -146,7 +160,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/controllers/doc-page.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (18:9)",
+        "line": 18,
+        "column": 9,
         "nodeType": null
       }
     ],
@@ -166,7 +182,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/controllers/markdown-region.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (20:2)",
+        "line": 20,
+        "column": 2,
         "nodeType": null
       }
     ],
@@ -186,7 +204,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/controllers/not-found.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (10:2)",
+        "line": 10,
+        "column": 2,
         "nodeType": null
       }
     ],
@@ -206,7 +226,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/controllers/page.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (10:9)",
+        "line": 10,
+        "column": 9,
         "nodeType": null
       }
     ],
@@ -226,7 +248,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/controllers/repl/error-overlay.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (16:2)",
+        "line": 16,
+        "column": 2,
         "nodeType": null
       }
     ],
@@ -246,7 +270,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/controllers/repl/index.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (95:2)",
+        "line": 95,
+        "column": 2,
         "nodeType": null
       }
     ],
@@ -266,7 +292,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/controllers/repl/runner.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (206:3)",
+        "line": 206,
+        "column": 3,
         "nodeType": null
       }
     ],
@@ -286,7 +314,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/controllers/repl-page.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (18:2)",
+        "line": 18,
+        "column": 2,
         "nodeType": null
       }
     ],
@@ -306,7 +336,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/controllers/tutorial/contexts.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (21:2)",
+        "line": 21,
+        "column": 2,
         "nodeType": null
       }
     ],
@@ -326,7 +358,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/controllers/tutorial/index.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (145:2)",
+        "line": 145,
+        "column": 2,
         "nodeType": null
       }
     ],
@@ -346,7 +380,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/controllers/tutorial-page.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (17:9)",
+        "line": 17,
+        "column": 9,
         "nodeType": null
       }
     ],
@@ -366,7 +402,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/doc-version/index.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (29:2)",
+        "line": 29,
+        "column": 2,
         "nodeType": null
       }
     ],
@@ -386,7 +424,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/edit-button/index.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (12:2)",
+        "line": 12,
+        "column": 2,
         "nodeType": null
       }
     ],
@@ -406,7 +446,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/footer/index.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (42:2)",
+        "line": 42,
+        "column": 2,
         "nodeType": null
       }
     ],
@@ -426,7 +468,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/github-stars.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (24:3)",
+        "line": 24,
+        "column": 3,
         "nodeType": null
       }
     ],
@@ -446,7 +490,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/header/corner.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (5:2)",
+        "line": 5,
+        "column": 2,
         "nodeType": null
       }
     ],
@@ -466,7 +512,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/header/gh-version.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (20:2)",
+        "line": 20,
+        "column": 2,
         "nodeType": null
       }
     ],
@@ -486,7 +534,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/header/index.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (29:2)",
+        "line": 29,
+        "column": 2,
         "nodeType": null
       }
     ],
@@ -506,7 +556,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/header/search.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (20:2)",
+        "line": 20,
+        "column": 2,
         "nodeType": null
       }
     ],
@@ -526,7 +578,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/jumbotron/index.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (5:1)",
+        "line": 5,
+        "column": 1,
         "nodeType": null
       }
     ],
@@ -546,7 +600,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/logo.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (52:3)",
+        "line": 52,
+        "column": 3,
         "nodeType": null
       }
     ],
@@ -566,7 +622,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/routes.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (18:2)",
+        "line": 18,
+        "column": 2,
         "nodeType": null
       }
     ],
@@ -586,7 +644,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/sidebar/index.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (44:2)",
+        "line": 44,
+        "column": 2,
         "nodeType": null
       }
     ],
@@ -606,7 +666,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/sidebar/sidebar-nav.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (20:2)",
+        "line": 20,
+        "column": 2,
         "nodeType": null
       }
     ],
@@ -626,7 +688,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/splitter/index.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (50:2)",
+        "line": 50,
+        "column": 2,
         "nodeType": null
       }
     ],
@@ -646,7 +710,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/sponsors/index.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (50:2)",
+        "line": 50,
+        "column": 2,
         "nodeType": null
       }
     ],
@@ -666,7 +732,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/table-of-contents/index.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (20:32)",
+        "line": 20,
+        "column": 32,
         "nodeType": null
       }
     ],
@@ -686,7 +754,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/time/index.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (9:2)",
+        "line": 9,
+        "column": 2,
         "nodeType": null
       }
     ],
@@ -706,7 +776,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/todo-list.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (21:3)",
+        "line": 21,
+        "column": 3,
         "nodeType": null
       }
     ],
@@ -726,7 +798,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/components/we-are-using/index.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (286:2)",
+        "line": 286,
+        "column": 2,
         "nodeType": null
       }
     ],
@@ -746,7 +820,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/index.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (14:9)",
+        "line": 14,
+        "column": 9,
         "nodeType": null
       }
     ],
@@ -766,7 +842,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/lib/i18n.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (62:2)",
+        "line": 62,
+        "column": 2,
         "nodeType": null
       }
     ],
@@ -786,7 +864,9 @@
         "ruleId": null,
         "fatal": true,
         "severity": 2,
-        "message": "Parsing error: No Babel config file detected for /Users/alviiin./Desktop/sem3/research/preact-www/src/lib/prerender-data.jsx. Either disable config file checking with requireConfigFile: false, or configure Babel so that it can find the config files.",
+        "message": "Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): \"jsx\", \"flow\", \"typescript\". (35:2)",
+        "line": 35,
+        "column": 2,
         "nodeType": null
       }
     ],
