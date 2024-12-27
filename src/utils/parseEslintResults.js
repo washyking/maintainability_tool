@@ -1,4 +1,11 @@
-const parseEslintResults = (results) => {
+const parseEslintResults = (eslintData) => {
+  const { results, summary } = eslintData;
+
+  if (!Array.isArray(results)) {
+    console.error("Unexpected results format. 'results' should be an array.");
+    return { customRules: [], genericRules: [], parsingErrors: [] };
+  }
+
   const customRules = [];
   const genericRules = [];
   const parsingErrors = [];
@@ -10,7 +17,7 @@ const parseEslintResults = (results) => {
         severity: message.severity === 2 ? 'Error' : 'Warning',
         filePath: result.filePath,
         message: message.message,
-        fatal: message.fatal || false, // Indicate if it’s a fatal error
+        fatal: message.fatal || false,
         line: message.line,
         column: message.column,
       };
@@ -29,6 +36,12 @@ const parseEslintResults = (results) => {
     });
   });
 
-  return { customRules, genericRules, parsingErrors };
+  return {
+    customRules,
+    genericRules,
+    parsingErrors,
+    summary, // Include the summary for further use
+  };
 };
+
 export default parseEslintResults;

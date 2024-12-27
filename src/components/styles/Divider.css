@@ -1,0 +1,11 @@
+.divider {
+  background-color: #007bff; /* Blue background */
+  padding: 20px; /* Padding around the text */
+  text-align: center; /* Center the text */
+}
+
+.divider h2 {
+  color: white; /* White text color */
+  font-weight: bold; /* Bold text */
+  margin: 0; /* Remove default margin */
+} 

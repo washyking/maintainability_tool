@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import parseEslintResults from '../utils/parseEslintResults';
-import summarizeResults from '../utils/summarizeEslintResults';
+import summarizeResults from '../utils/summarizeResults';
 import SummaryDashboard from './SummaryDashboard';
 import RulesTable from './RulesTable';
 import FileHeatmap from './FileHeatmap';
+import Divider from './Divider';
 
 const ESLintResults = () => {
   const [data, setData] = useState(null);
@@ -16,13 +17,19 @@ const ESLintResults = () => {
           throw new Error('Network response was not ok');
         }
         const results = await response.json();
-        
+        console.log('Fetched ESLint results:', results);
+
         // Parse ESLint results
         const { customRules, genericRules, parsingErrors } = parseEslintResults(results);
-        
-        // Summarize the results
-        const summary = summarizeResults(customRules, genericRules, parsingErrors);
-        
+        console.log('Parsed Results:', { customRules, genericRules, parsingErrors });
+
+        // Summarize the results and include the raw results
+        const summary = {
+          ...summarizeResults(customRules, genericRules, parsingErrors),
+          results: results.results, // Include the raw results array
+        };
+        console.log('Summary Data:', summary);
+
         setData({ summary, customRules, genericRules, parsingErrors });
       } catch (error) {
         console.error('Error fetching ESLint results:', error);
@@ -38,14 +45,13 @@ const ESLintResults = () => {
 
   return (
     <div>
-      {/* Display the summary dashboard */}
       <SummaryDashboard summary={data.summary} />
+      <Divider title="Heat Map" />
+      <FileHeatmap summary={data.summary} />
 
+      <Divider title="Top Issues" />
       {/* Display custom and generic rules in a table */}
       <RulesTable customRules={data.customRules} genericRules={data.genericRules} />
-
-      {/* Heatmap visualization for all rule violations */}
-      <FileHeatmap fileData={data.customRules.concat(data.genericRules)} />
 
       {/* Display parsing errors separately */}
       {data.parsingErrors.length > 0 && (
@@ -54,11 +60,9 @@ const ESLintResults = () => {
           <ul>
             {data.parsingErrors.map((error, index) => (
               <li key={index}>
-                <strong>{error.message}</strong> 
+                <strong>{error.message}</strong>
                 <br />
-                File: <code>{error.filePath}</code>, 
-                Line: {error.line}, 
-                Column: {error.column}
+                File: <code>{error.filePath}</code>, Line: {error.line}, Column: {error.column}
               </li>
             ))}
           </ul>
