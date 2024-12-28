@@ -1,0 +1,61 @@
+/* General table styling */
+table {
+    width: 70%; /* Set table width to 70% */
+    margin: 20px auto; /* Center the table horizontally */
+    border-collapse: collapse;
+    font-size: 16px;
+    text-align: left;
+    background-color: #2e2e2e; /* Dark background for the table */
+    color: #f5f5f5; /* Light text for readability */
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Table headers */
+  table thead th {
+    background-color: #444; /* Slightly darker background for headers */
+    padding: 12px 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid #555; /* Separates header from body */
+  }
+  
+  /* Table rows */
+  table tbody tr {
+    border-bottom: 1px solid #555;
+  }
+  
+  /* Alternate row colors */
+  table tbody tr:nth-child(even) {
+    background-color: #393939;
+  }
+  
+  /* Cell padding */
+  table td {
+    padding: 12px 15px;
+  }
+  
+  /* Add vertical border next to "Occurrences" */
+  table thead th:last-child,
+  table tbody td:last-child {
+    border-left: 2px solid #666; /* Vertical border line */
+  }
+  
+  /* Hover effect on rows */
+  table tbody tr:hover {
+    background-color: #505050;
+  }
+  
+  /* Align titles with the table's left border */
+  h3 {
+    color: #f5f5f5; /* Same light text as table */
+    margin: 20px 0 10px;
+    font-size: 20px;
+    text-align: center; /* Center the title horizontally */
+  }
+  
+  h3.title-left {
+    text-align: left; /* Align with the table's left border */
+    margin-left: 15%; /* Offset margin to align with the table */
+  }
+  

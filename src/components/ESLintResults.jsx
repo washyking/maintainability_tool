@@ -3,7 +3,8 @@ import parseEslintResults from '../utils/parseEslintResults';
 import summarizeResults from '../utils/summarizeResults';
 import SummaryDashboard from './SummaryDashboard';
 import RulesTable from './RulesTable';
-import FileHeatmap from './FileHeatmap';
+import ScatterPlot from './ScatterPlot';
+import ActionableItems from './ActionableItems'; // Import the new component
 import Divider from './Divider';
 
 const ESLintResults = () => {
@@ -20,13 +21,15 @@ const ESLintResults = () => {
         console.log('Fetched ESLint results:', results);
 
         // Parse ESLint results
-        const { customRules, genericRules, parsingErrors } = parseEslintResults(results);
-        console.log('Parsed Results:', { customRules, genericRules, parsingErrors });
+        const { customRules, genericRules, parsingErrors, severityCounts } =
+          parseEslintResults(results);
+        console.log('Parsed Results:', { customRules, genericRules, parsingErrors, severityCounts });
 
         // Summarize the results and include the raw results
         const summary = {
           ...summarizeResults(customRules, genericRules, parsingErrors),
           results: results.results, // Include the raw results array
+          severityCounts, // Include severityCounts for heatmap
         };
         console.log('Summary Data:', summary);
 
@@ -47,13 +50,15 @@ const ESLintResults = () => {
     <div>
       <SummaryDashboard summary={data.summary} />
       <Divider title="Heat Map" />
-      <FileHeatmap summary={data.summary} />
+      <ScatterPlot summary={data.summary} />
 
       <Divider title="Top Issues" />
-      {/* Display custom and generic rules in a table */}
       <RulesTable customRules={data.customRules} genericRules={data.genericRules} />
 
-      {/* Display parsing errors separately */}
+      <Divider title="Actionable Items" />
+      <ActionableItems summary={data.summary} />
+
+
       {data.parsingErrors.length > 0 && (
         <div style={{ marginTop: '20px' }}>
           <h3>Parsing Errors</h3>

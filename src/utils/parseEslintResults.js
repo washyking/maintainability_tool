@@ -1,20 +1,35 @@
 const parseEslintResults = (eslintData) => {
-  const { results, summary } = eslintData;
+  const { results } = eslintData;
 
   if (!Array.isArray(results)) {
     console.error("Unexpected results format. 'results' should be an array.");
-    return { customRules: [], genericRules: [], parsingErrors: [] };
+    return { customRules: [], genericRules: [], parsingErrors: [], severityCounts: {} };
   }
 
   const customRules = [];
   const genericRules = [];
   const parsingErrors = [];
+  const severityCounts = {
+    Critical: 0,
+    High: 0,
+    Medium: 0,
+    Low: 0,
+  };
 
   results.forEach((result) => {
     result.messages.forEach((message) => {
+      const severityLevel =
+        message.severity === 2
+          ? "High"
+          : message.fatal
+          ? "Critical"
+          : "Medium"; // Adjust severity mapping as needed
+
+      severityCounts[severityLevel] = (severityCounts[severityLevel] || 0) + 1;
+
       const rule = {
-        ruleId: message.ruleId || 'Parsing Error',
-        severity: message.severity === 2 ? 'Error' : 'Warning',
+        ruleId: message.ruleId || "Parsing Error",
+        severity: severityLevel,
         filePath: result.filePath,
         message: message.message,
         fatal: message.fatal || false,
@@ -23,14 +38,12 @@ const parseEslintResults = (eslintData) => {
       };
 
       if (message.ruleId) {
-        // Categorize as custom or generic based on ruleId
-        if (message.ruleId.startsWith('custom/')) {
+        if (message.ruleId.startsWith("custom/")) {
           customRules.push(rule);
         } else {
           genericRules.push(rule);
         }
       } else {
-        // Categorize as a parsing error
         parsingErrors.push(rule);
       }
     });
@@ -40,7 +53,7 @@ const parseEslintResults = (eslintData) => {
     customRules,
     genericRules,
     parsingErrors,
-    summary, // Include the summary for further use
+    severityCounts,
   };
 };
 
