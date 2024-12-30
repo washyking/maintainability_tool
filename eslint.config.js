@@ -4,7 +4,7 @@ import reactPlugin from 'eslint-plugin-react';
 
 export default [
   {
-    files: ['**/*.jsx'], // Target JSX files
+    files: ['**/*.{js,jsx,ts,tsx}'], // Target JS, JSX, TS, and TSX files
     languageOptions: {
       parser: babelParser,
       parserOptions: {
@@ -12,7 +12,7 @@ export default [
         ecmaVersion: 2021,
         sourceType: 'module',
         babelOptions: {
-          presets: ['@babel/preset-react'], // Ensures JSX is parsed correctly
+          presets: ['@babel/preset-react'], // Ensure JSX/TSX parsing
         },
       },
       globals: {
@@ -30,9 +30,22 @@ export default [
       },
     },
     rules: {
+      // Custom ESLint Rules
       'custom/limit-prop-drill-depth': ['error', { maxDepth: 3 }],
+      'custom/consistent-component-naming': 'error',
+      'custom/limit-jsx-nesting-depth': ['warn', { maxDepth: 4 }],
+      'custom/require-default-props': 'error',
+      'custom/avoid-anonymous-functions-in-jsx': 'warn',
+      'custom/enforce-hooks-dependency-completeness': 'error',
+
+      // React Rules
       'react/jsx-uses-react': 'error', // Ensure React is used in JSX files
       'react/jsx-uses-vars': 'error', // Prevent unused variables in JSX
+
+      // Generic Best Practices
+      'complexity': ['warn', 10], // Limit cyclomatic complexity
+      'max-lines-per-function': ['warn', { max: 50 }], // Enforce shorter functions
+      'no-console': 'warn', // Warn about console logs in production
     },
   },
 ];

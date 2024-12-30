@@ -29,6 +29,11 @@ const runESLint = async (projectPath) => {
         },
         rules: {
           "custom/limit-prop-drill-depth": ["warn", { maxDepth: 3 }],
+          "custom/consistent-component-naming": "error",
+          "custom/limit-jsx-nesting-depth": ["warn", { maxDepth: 4 }],
+          "custom/require-default-props": "error",
+          "custom/avoid-anonymous-functions-in-jsx": "warn",
+          "custom/enforce-hooks-dependency-completeness": "error",
           complexity: ["warn", 10],
         },
       },
@@ -37,7 +42,7 @@ const runESLint = async (projectPath) => {
     });
 
     console.log(`Running ESLint on: ${projectPath}`);
-    const results = await eslint.lintFiles([`${projectPath}/**/*.js`]);
+    const results = await eslint.lintFiles([`${projectPath}/**/*.{js,jsx,ts,tsx}`]);
 
     const elapsedTime = ((Date.now() - startTime) / 1000).toFixed(2);
     console.log(`ESLint completed in ${elapsedTime} seconds.`);
@@ -58,7 +63,10 @@ const runESLint = async (projectPath) => {
 
     console.log(`Results saved to: ${resultsPath}`);
   } catch (error) {
-    console.error("Error running ESLint:", error);
+    console.error("Error running ESLint:", {
+      message: error.message,
+      stack: error.stack,
+    });
   }
 };
 

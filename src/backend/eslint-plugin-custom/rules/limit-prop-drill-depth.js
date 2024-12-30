@@ -33,18 +33,19 @@ module.exports = {
     };
 
     return {
-      JSXOpeningElement(node) {
+      JSXElement(node) {
         let depth = 0;
-        let currentElement = node;
+        let current = node;
 
-        while (currentElement.parent && currentElement.parent.type === 'JSXElement') {
+        // Traverse up the parent tree to calculate depth
+        while (current.parent && current.parent.type === 'JSXElement') {
           depth++;
-          currentElement = currentElement.parent;
+          current = current.parent;
+        }
 
-          if (depth > maxDepth) {
-            checkPropDrilling(node, depth);
-            break; // Exit early to avoid unnecessary iterations
-          }
+        // Report only the deepest element exceeding maxDepth
+        if (depth > maxDepth) {
+          checkPropDrilling(node.openingElement, depth);
         }
       },
     };
