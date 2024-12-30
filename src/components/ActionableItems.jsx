@@ -43,10 +43,8 @@ const ActionableItems = ({ summary }) => {
   const generateItems = (category, limit) => {
     const issues = groupedIssues[category];
     const isExpanded = expandedSections[category];
-    const itemsToShow = isExpanded
-      ? issues.slice(0, category === "Critical" ? limit : issues.length)
-      : [];
-
+    const itemsToShow = isExpanded ? issues.slice(0, limit) : [];
+  
     return (
       <div>
         <ul>
@@ -58,7 +56,7 @@ const ActionableItems = ({ summary }) => {
             </li>
           ))}
         </ul>
-        {issues.length > limit && category === "Critical" && (
+        {issues.length > limit && (
           <button
             style={{
               marginTop: "10px",
@@ -76,6 +74,7 @@ const ActionableItems = ({ summary }) => {
       </div>
     );
   };
+  
 
   return (
     <div style={{ width: "70%", margin: "0 auto", color: "#fff" }}>
@@ -121,7 +120,7 @@ const ActionableItems = ({ summary }) => {
             ▼
           </span>
         </h3>
-        {generateItems("Optimizations")}
+        {generateItems("Optimizations", 5)} {/* Limit to 5 */}
       </div>
 
       {/* Best Practices */}
@@ -139,7 +138,7 @@ const ActionableItems = ({ summary }) => {
             ▼
           </span>
         </h3>
-        {generateItems("Best Practices")}
+        {generateItems("Best Practices", 3)} {/* Optional: Limit to 3 */}
       </div>
     </div>
   );

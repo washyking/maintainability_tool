@@ -5,35 +5,36 @@ const summarizeResults = (customRules, genericRules, parsingErrors) => {
       ruleOccurrences[rule.ruleId] = (ruleOccurrences[rule.ruleId] || 0) + 1;
     });
     return {
-      count: Object.keys(ruleOccurrences).length, // Unique rules
-      occurrences: rules.length, // Total occurrences
+      count: Object.keys(ruleOccurrences).length, // Unique rules violated
+      occurrences: rules.length, // Total violations
     };
   };
 
-  const customSummary = countOccurrences(customRules);
-  const genericSummary = countOccurrences(genericRules);
+  const calculateSeverity = (rules) => ({
+    error: rules.filter((rule) => rule.severity === "High").length, // Errors (severity === 2)
+    warning: rules.filter((rule) => rule.severity === "Medium").length, // Warnings (severity === 1)
+  });
+
+  const customSummary = {
+    ...countOccurrences(customRules),
+    severity: calculateSeverity(customRules),
+  };
+
+  const genericSummary = {
+    ...countOccurrences(genericRules),
+    severity: calculateSeverity(genericRules),
+  };
+
+  const parsingSummary = {
+    count: parsingErrors.length, // Number of files with parsing errors
+    occurrences: parsingErrors.length, // Total parsing errors
+  };
 
   return {
-    custom: {
-      ...customSummary,
-      severity: {
-        error: customRules.filter(rule => rule.severity === 'Error').length,
-        warning: customRules.filter(rule => rule.severity === 'Warning').length,
-      },
-    },
-    generic: {
-      ...genericSummary,
-      severity: {
-        error: genericRules.filter(rule => rule.severity === 'Error').length,
-        warning: genericRules.filter(rule => rule.severity === 'Warning').length,
-      },
-    },
-    parsingErrors: {
-      count: parsingErrors.length,
-      occurrences: parsingErrors.length,
-    },
+    custom: customSummary,
+    generic: genericSummary,
+    parsingErrors: parsingSummary,
   };
 };
-
 
 export default summarizeResults;

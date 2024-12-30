@@ -7,16 +7,14 @@ import './styles/SummaryDashboard.css';
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const SummaryDashboard = ({ summary }) => {
-  const results = summary.results || []; // Safeguard against undefined results
+  const { custom, generic } = summary;
 
   // Calculate passing and failing files
+  const results = summary.results || []; // Safeguard against undefined results
   const totalFiles = results.length;
-  const failingFiles = results.filter(file => file.errorCount > 0).length;
+  const failingFiles = results.filter((file) => file.errorCount > 0).length;
   const passingFiles = totalFiles - failingFiles; // Remaining files are passing
-
-  console.log('Total Files:', totalFiles);
-  console.log('Failing Files:', failingFiles);
-  console.log('Passing Files:', passingFiles);
+  const passingPercentage = totalFiles > 0 ? ((passingFiles / totalFiles) * 100).toFixed(2) : 0; // Percentage of passing files
 
   if (totalFiles === 0) {
     return <p>No files were analyzed.</p>;
@@ -33,8 +31,6 @@ const SummaryDashboard = ({ summary }) => {
     ],
   };
 
-  console.log('Pie Chart Data:', JSON.stringify(pieData, null, 2));
-
   return (
     <div className="summary-dashboard">
       <div className="sections-container">
@@ -43,15 +39,15 @@ const SummaryDashboard = ({ summary }) => {
           <div className="glowing-box-row">
             <div className="glowing-box-container">
               <div className="glowing-box">
-                <p>{summary.custom.severity.error}</p>
+                <p>{custom.count}</p>
               </div>
-              <p>Error count</p>
+              <p>Distinct Errors</p>
             </div>
             <div className="glowing-box-container">
               <div className="glowing-box">
-                <p>{summary.custom.occurrences}</p>
+                <p>{custom.occurrences}</p>
               </div>
-              <p>Error occurrences</p>
+              <p>Error Occurrences</p>
             </div>
           </div>
         </div>
@@ -60,22 +56,22 @@ const SummaryDashboard = ({ summary }) => {
           <div className="glowing-box-row">
             <div className="glowing-box-container">
               <div className="glowing-box">
-                <p>{summary.generic.severity.error}</p>
+                <p>{generic.count}</p>
               </div>
-              <p>Error count</p>
+              <p>Distinct Errors</p>
             </div>
             <div className="glowing-box-container">
               <div className="glowing-box">
-                <p>{summary.generic.occurrences}</p>
+                <p>{generic.occurrences}</p>
               </div>
-              <p>Error occurrences</p>
+              <p>Error Occurrences</p>
             </div>
           </div>
         </div>
       </div>
       <div className="pie-chart" style={{ width: '400px', height: '400px' }}>
         <Pie data={pieData} />
-        <p>% of files passing rules</p>
+        <p>{passingPercentage}% of files passing rules</p>
       </div>
     </div>
   );

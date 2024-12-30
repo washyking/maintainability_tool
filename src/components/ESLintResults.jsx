@@ -59,20 +59,7 @@ const ESLintResults = () => {
       <ActionableItems summary={data.summary} />
 
 
-      {data.parsingErrors.length > 0 && (
-        <div style={{ marginTop: '20px' }}>
-          <h3>Parsing Errors</h3>
-          <ul>
-            {data.parsingErrors.map((error, index) => (
-              <li key={index}>
-                <strong>{error.message}</strong>
-                <br />
-                File: <code>{error.filePath}</code>, Line: {error.line}, Column: {error.column}
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+      
     </div>
   );
 };

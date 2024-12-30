@@ -44,11 +44,17 @@ const runESLint = async (projectPath) => {
     console.log(`Running ESLint on: ${projectPath}`);
     const results = await eslint.lintFiles([`${projectPath}/**/*.{js,jsx,ts,tsx}`]);
 
+    if (!Array.isArray(results)) {
+      console.error("Unexpected results format from ESLint. 'results' should be an array.");
+      console.log("Received:", results);
+      return;
+    }
+
     const elapsedTime = ((Date.now() - startTime) / 1000).toFixed(2);
     console.log(`ESLint completed in ${elapsedTime} seconds.`);
 
     // Parse and summarize results
-    const parsedResults = parseEslintResults(results);
+    const parsedResults = parseEslintResults({ results });
     const summary = summarizeResults(
       parsedResults.customRules,
       parsedResults.genericRules,
@@ -69,6 +75,7 @@ const runESLint = async (projectPath) => {
     });
   }
 };
+
 
 // Get the project path from the command-line argument
 const projectPath = process.argv[2];
