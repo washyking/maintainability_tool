@@ -5,7 +5,6 @@ The **Maintainability Tool** is a analysis platform/tool designed to help develo
 
 ## Features
 - **ESLint Analysis**: Highlights errors and warnings for both custom rules (e.g., Preact-specific) and general JavaScript rules.
-- **SonarQube Integration**: Evaluates code smells, bugs, and other maintainability metrics at scale.
 - **Heatmap Visualization**: Displays the density of issues across project files, helping developers focus on the most problematic areas.
 - **Actionable Suggestions**: Provides targeted recommendations to improve code quality, with a focus on high-impact fixes.
 - **Summary Dashboards**: Visual summaries, including pie charts and tables, for an at-a-glance understanding of code health.
@@ -17,12 +16,12 @@ This tool is aimed at developers and teams looking to:
 - **Promote best practices** through actionable recommendations and summaries.
 
 ## Built With
-- **Frontend**: React.js for UI components and visualisations.
+- **Frontend**: Preact.js for UI components and visualisations.
 - **Visualisation Libraries**: Chart.js for charts and heatmap displays.
-- **Backend**: Node.js to process and aggregate data from tools like ESLint and SonarQube.
+- **Backend**: Node.js to process and aggregate data from tools like ESLint.
 - **Code Quality Tools**:
   - **ESLint**: For customisable linting and error reporting.
-  - **SonarQube**: For deep code analysis and maintainability scoring.
+
 
 ## How It Works
 1. **Analyse Code**: Run the tool on your codebase to collect linting errors, warnings, and SonarQube data.
@@ -31,5 +30,6 @@ This tool is aimed at developers and teams looking to:
 
 ## Future Enhancements
 - GitHub pull request analysis for tracking code quality changes over time.
+- SonarQube for deep code analysis and maintainability scoring.
 
 
