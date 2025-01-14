@@ -43,7 +43,15 @@ const ESLintResults = () => {
   }, []);
 
   if (!data) {
-    return <div>Loading...</div>;
+    return (
+        <div style={{ textAlign: 'center', padding: '20px' }}>
+            <h2>You haven't run the tool yet.</h2>
+            <p>
+                Please go back to the <a href="/">home page</a> or run the tool in your terminal:
+            </p>
+            <code>node eslint-tool *insert_target_folder*</code>
+        </div>
+    );
   }
 
   return (

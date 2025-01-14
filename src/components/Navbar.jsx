@@ -9,13 +9,16 @@ const Navbar = ({ currentPath }) => { // Accept currentPath as a prop
           <Link href="/">Home</Link>
         </li>
         <li className={currentPath === '/lighthouse' ? 'active' : ''}>
-          <Link href="/lighthouse">Lighthouse(inactive)</Link>
+          <Link href="/lighthouse">Lighthouse(remove)</Link>
         </li>
         <li className={currentPath === '/eslint' ? 'active' : ''}>
           <Link href="/eslint">ESLint</Link>
         </li>
+        <li className={currentPath === '/metrics_timeline' ? 'active' : ''}>
+          <Link href="/metrics_timeline">Metrics Timeline</Link>
+        </li>
         <li className={currentPath === '/sonarqube' ? 'active' : ''}>
-          <Link href="/sonarqube">SonarQube(inactive)</Link>
+          <Link href="/sonarqube">SonarQube(remove)</Link>
         </li>
       </ul>
     </nav>
