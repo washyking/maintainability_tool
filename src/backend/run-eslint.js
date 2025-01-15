@@ -4,10 +4,39 @@ import { fileURLToPath } from "url";
 import fs from "fs/promises";
 import parseEslintResults from "../utils/parseEslintResults.js";
 import summarizeResults from "../utils/summarizeResults.js";
+import { analyzeMetrics } from "../utils/calculateMI.js"; 
 
 // Resolve __dirname in ES module
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
+// Function to save snapshot
+const saveSnapshot = async (metrics) => {
+  const snapshotsPath = path.resolve(__dirname, "../../public/snapshots.json");
+  let snapshots = [];
+
+  try {
+    // Read existing snapshots if the file exists
+    const data = await fs.readFile(snapshotsPath, "utf-8");
+    snapshots = JSON.parse(data).snapshots || [];
+  } catch (error) {
+    if (error.code !== "ENOENT") throw error; // Ignore file not found error
+  }
+
+  // Add current metrics with a timestamp
+  snapshots.push({
+    timestamp: new Date().toISOString(),
+    ...metrics,
+  });
+
+  // Save updated snapshots back to the file
+  await fs.writeFile(
+    snapshotsPath,
+    JSON.stringify({ snapshots }, null, 2)
+  );
+
+  console.log(`Snapshot saved to: ${snapshotsPath}`);
+};
 
 const runESLint = async (projectPath) => {
   try {
@@ -61,11 +90,21 @@ const runESLint = async (projectPath) => {
       parsedResults.parsingErrors
     );
 
+    // Analyze maintainability metrics
+    const metrics = analyzeMetrics(results);
+    console.log("Maintainability Metrics:", metrics);
+
+    // Save metrics to snapshots.json
+    await saveSnapshot(metrics);
+
     const resultsDir = path.resolve(__dirname, "../../public");
     await fs.mkdir(resultsDir, { recursive: true });
 
     const resultsPath = path.join(resultsDir, "eslint-results.json");
-    await fs.writeFile(resultsPath, JSON.stringify({ summary, results }, null, 2));
+    await fs.writeFile(
+      resultsPath,
+      JSON.stringify({ summary, results, metrics }, null, 2)
+    );
 
     console.log(`Results saved to: ${resultsPath}`);
   } catch (error) {
@@ -75,7 +114,6 @@ const runESLint = async (projectPath) => {
     });
   }
 };
-
 
 // Get the project path from the command-line argument
 const projectPath = process.argv[2];
