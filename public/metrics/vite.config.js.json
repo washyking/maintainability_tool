@@ -1,0 +1,21 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 58,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 1451.9380894411395,
+    "totalRuleViolations": 1
+  },
+  "issues": [
+    {
+      "ruleId": "no-undef",
+      "line": 27,
+      "severity": 2,
+      "message": "'process' is not defined."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

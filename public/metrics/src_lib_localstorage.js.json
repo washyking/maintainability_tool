@@ -1,0 +1,33 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 30,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 744.6296590932159,
+    "totalRuleViolations": 3
+  },
+  "issues": [
+    {
+      "ruleId": "no-undef",
+      "line": 5,
+      "severity": 2,
+      "message": "'localStorage' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 13,
+      "severity": 2,
+      "message": "'localStorage' is not defined."
+    },
+    {
+      "ruleId": "no-empty",
+      "line": 14,
+      "severity": 2,
+      "message": "Empty block statement."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

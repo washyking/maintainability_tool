@@ -1,0 +1,69 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 43,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 1307.2242337505281,
+    "totalRuleViolations": 9
+  },
+  "issues": [
+    {
+      "ruleId": "no-undef",
+      "line": 11,
+      "severity": 2,
+      "message": "'window' is not defined."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 17,
+      "severity": 2,
+      "message": "Dependency \"url\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 17,
+      "severity": 2,
+      "message": "Dependency \"user\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 17,
+      "severity": 2,
+      "message": "Dependency \"repo\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 17,
+      "severity": 2,
+      "message": "Dependency \"simple\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 17,
+      "severity": 2,
+      "message": "Dependency \"stars\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 17,
+      "severity": 2,
+      "message": "Dependency \"formatNumber\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 17,
+      "severity": 2,
+      "message": "Dependency \"Math\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 17,
+      "severity": 2,
+      "message": "Dependency \"children\" is missing in useEffect."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

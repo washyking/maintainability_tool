@@ -1,0 +1,45 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 35,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 1571.542471033198,
+    "totalRuleViolations": 5
+  },
+  "issues": [
+    {
+      "ruleId": "no-unused-vars",
+      "line": 2,
+      "severity": 2,
+      "message": "'Router' is defined but never used."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 2,
+      "severity": 2,
+      "message": "'Route' is defined but never used."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 13,
+      "severity": 2,
+      "message": "'ga' is not defined."
+    },
+    {
+      "ruleId": "custom/avoid-anonymous-functions-in-jsx",
+      "line": 21,
+      "severity": 1,
+      "message": "Avoid anonymous functions in JSX. Use a named function or useCallback instead."
+    },
+    {
+      "ruleId": "custom/avoid-anonymous-functions-in-jsx",
+      "line": 22,
+      "severity": 1,
+      "message": "Avoid anonymous functions in JSX. Use a named function or useCallback instead."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

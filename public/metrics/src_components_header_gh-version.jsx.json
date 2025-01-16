@@ -1,0 +1,27 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 21,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 427.1751759815739,
+    "totalRuleViolations": 2
+  },
+  "issues": [
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 13,
+      "severity": 2,
+      "message": "Dependency \"release\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 13,
+      "severity": 2,
+      "message": "Dependency \"props\" is missing in useEffect."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

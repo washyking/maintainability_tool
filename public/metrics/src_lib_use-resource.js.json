@@ -1,0 +1,39 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 73,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 1948.619301712236,
+    "totalRuleViolations": 4
+  },
+  "issues": [
+    {
+      "ruleId": "no-undef",
+      "line": 15,
+      "severity": 2,
+      "message": "'Map' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 22,
+      "severity": 2,
+      "message": "'document' is not defined."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 46,
+      "severity": 2,
+      "message": "Dependency \"cacheKey\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 46,
+      "severity": 2,
+      "message": "Dependency \"state\" is missing in useEffect."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

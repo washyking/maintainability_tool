@@ -1,0 +1,21 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 64,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 1764.7699501932698,
+    "totalRuleViolations": 1
+  },
+  "issues": [
+    {
+      "ruleId": "no-unused-vars",
+      "line": 58,
+      "severity": 2,
+      "message": "'SponsorItem' is defined but never used."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

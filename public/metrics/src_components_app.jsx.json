@@ -1,0 +1,63 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 22,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 496.31280013846197,
+    "totalRuleViolations": 8
+  },
+  "issues": [
+    {
+      "ruleId": "no-unused-vars",
+      "line": 1,
+      "severity": 2,
+      "message": "'LocationProvider' is defined but never used."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 1,
+      "severity": 2,
+      "message": "'ErrorBoundary' is defined but never used."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 2,
+      "severity": 2,
+      "message": "'LanguageProvider' is defined but never used."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 3,
+      "severity": 2,
+      "message": "'PrerenderDataProvider' is defined but never used."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 4,
+      "severity": 2,
+      "message": "'Header' is defined but never used."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 5,
+      "severity": 2,
+      "message": "'Routes' is defined but never used."
+    },
+    {
+      "ruleId": "custom/limit-prop-drill-depth",
+      "line": 16,
+      "severity": 1,
+      "message": "Props are drilled beyond 4 levels. Consider using Context API or global state."
+    },
+    {
+      "ruleId": "custom/limit-prop-drill-depth",
+      "line": 17,
+      "severity": 1,
+      "message": "Props are drilled beyond 4 levels. Consider using Context API or global state."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

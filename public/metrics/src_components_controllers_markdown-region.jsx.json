@@ -1,0 +1,39 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 29,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 738.7474869206902,
+    "totalRuleViolations": 4
+  },
+  "issues": [
+    {
+      "ruleId": "no-unused-vars",
+      "line": 1,
+      "severity": 2,
+      "message": "'Fragment' is defined but never used."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 3,
+      "severity": 2,
+      "message": "'EditThisPage' is defined but never used."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 4,
+      "severity": 2,
+      "message": "'ContentRegion' is defined but never used."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 5,
+      "severity": 2,
+      "message": "'BlogMeta' is defined but never used."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

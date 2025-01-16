@@ -1,0 +1,69 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 31,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 867.1143438501601,
+    "totalRuleViolations": 9
+  },
+  "issues": [
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 12,
+      "severity": 2,
+      "message": "Dependency \"open\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 12,
+      "severity": 2,
+      "message": "Dependency \"setOpen\" is missing in useEffect."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 19,
+      "severity": 2,
+      "message": "'window' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 25,
+      "severity": 2,
+      "message": "'window' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 26,
+      "severity": 2,
+      "message": "'window' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 33,
+      "severity": 2,
+      "message": "'window' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 34,
+      "severity": 2,
+      "message": "'document' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 38,
+      "severity": 2,
+      "message": "'getComputedStyle' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 38,
+      "severity": 2,
+      "message": "'document' is not defined."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

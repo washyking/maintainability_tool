@@ -23,6 +23,38 @@
       "cyclomaticComplexity": 104,
       "halsteadVolume": 254427.4595009783,
       "totalRuleViolations": 371
+    },
+    {
+      "timestamp": "2025-01-15T13:28:34.598Z",
+      "maintainabilityIndex": 41.26289429520496,
+      "linesOfCode": 4032,
+      "cyclomaticComplexity": 104,
+      "halsteadVolume": 254427.4595009783,
+      "totalRuleViolations": 371
+    },
+    {
+      "timestamp": "2025-01-15T13:39:04.387Z",
+      "maintainabilityIndex": 41.26289429520496,
+      "linesOfCode": 4032,
+      "cyclomaticComplexity": 104,
+      "halsteadVolume": 254427.4595009783,
+      "totalRuleViolations": 371
+    },
+    {
+      "timestamp": "2025-01-16T06:39:36.505Z",
+      "maintainabilityIndex": 41.26289429520496,
+      "linesOfCode": 4032,
+      "cyclomaticComplexity": 104,
+      "halsteadVolume": 254427.4595009783,
+      "totalRuleViolations": 371
+    },
+    {
+      "timestamp": "2025-01-16T07:24:00.597Z",
+      "maintainabilityIndex": 41.26289429520496,
+      "linesOfCode": 4032,
+      "cyclomaticComplexity": 104,
+      "halsteadVolume": 254427.4595009783,
+      "totalRuleViolations": 371
     }
   ]
 }

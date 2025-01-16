@@ -4,7 +4,7 @@ import { fileURLToPath } from "url";
 import fs from "fs/promises";
 import parseEslintResults from "../utils/parseEslintResults.js";
 import summarizeResults from "../utils/summarizeResults.js";
-import { analyzeMetrics } from "../utils/calculateMI.js"; 
+import { analyzeMetrics } from "../utils/calculateMI.js";
 
 // Resolve __dirname in ES module
 const __filename = fileURLToPath(import.meta.url);
@@ -16,7 +16,6 @@ const saveSnapshot = async (metrics) => {
   let snapshots = [];
 
   try {
-    // Read existing snapshots if the file exists
     const data = await fs.readFile(snapshotsPath, "utf-8");
     snapshots = JSON.parse(data).snapshots || [];
   } catch (error) {
@@ -36,6 +35,52 @@ const saveSnapshot = async (metrics) => {
   );
 
   console.log(`Snapshot saved to: ${snapshotsPath}`);
+};
+
+// Function to save individual file metrics
+const saveFileMetrics = async (eslintResults, projectPath) => {
+  const metricsDir = path.resolve(__dirname, "../../public/metrics");
+  await fs.mkdir(metricsDir, { recursive: true });
+
+  for (const result of eslintResults) {
+    const relativePath = path.relative(projectPath, result.filePath);
+    const fileMetrics = analyzeMetrics([result]); // Analyze metrics for the specific file
+
+    // Extract issues (rule violations) from the ESLint result
+    const issues = result.messages.map((message) => ({
+      ruleId: message.ruleId || "Unknown Rule",
+      line: message.line,
+      severity: message.severity,
+      message: message.message,
+    }));
+
+    // Add dependency details (optional, assuming you have a way to extract imports/exports)
+    const dependencies = {
+      imports: [], // Fill this with the imports if you're parsing them elsewhere
+      exports: [], // Fill this with the exports if you're parsing them elsewhere
+    };
+
+    // Combine metrics, issues, and dependencies
+    const fileData = {
+      metrics: fileMetrics,
+      issues: issues,
+      dependencies: dependencies, // Add any additional data here
+    };
+
+    const metricsPath = path.join(metricsDir, `${relativePath.replace(/\//g, '_')}.json`);
+    await fs.writeFile(metricsPath, JSON.stringify(fileData, null, 2));
+    console.log(`File metrics saved for ${relativePath}`);
+  }
+};
+
+
+
+// Function to save the file list
+const saveFileList = async (eslintResults, projectPath) => {
+  const files = eslintResults.map(result => path.relative(projectPath, result.filePath));
+  const fileListPath = path.resolve(__dirname, "../../public/files.json");
+  await fs.writeFile(fileListPath, JSON.stringify({ files }, null, 2));
+  console.log(`File list saved to: ${fileListPath}`);
 };
 
 const runESLint = async (projectPath) => {
@@ -94,8 +139,12 @@ const runESLint = async (projectPath) => {
     const metrics = analyzeMetrics(results);
     console.log("Maintainability Metrics:", metrics);
 
-    // Save metrics to snapshots.json
+    // Save overall metrics and snapshots
     await saveSnapshot(metrics);
+
+    // Save individual file metrics and file list
+    await saveFileMetrics(results, projectPath);
+    await saveFileList(results, projectPath);
 
     const resultsDir = path.resolve(__dirname, "../../public");
     await fs.mkdir(resultsDir, { recursive: true });
@@ -108,10 +157,7 @@ const runESLint = async (projectPath) => {
 
     console.log(`Results saved to: ${resultsPath}`);
   } catch (error) {
-    console.error("Error running ESLint:", {
-      message: error.message,
-      stack: error.stack,
-    });
+    console.error("Error running ESLint:", error);
   }
 };
 

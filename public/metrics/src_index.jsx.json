@@ -1,0 +1,105 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 57,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 2514.553487367526,
+    "totalRuleViolations": 15
+  },
+  "issues": [
+    {
+      "ruleId": "no-unused-vars",
+      "line": 5,
+      "severity": 2,
+      "message": "'App' is defined but never used."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 10,
+      "severity": 2,
+      "message": "'globalThis' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 14,
+      "severity": 2,
+      "message": "'document' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 17,
+      "severity": 2,
+      "message": "'navigator' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 18,
+      "severity": 2,
+      "message": "'navigator' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 36,
+      "severity": 2,
+      "message": "'globalThis' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 55,
+      "severity": 2,
+      "message": "'Set' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 56,
+      "severity": 2,
+      "message": "'globalThis' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 57,
+      "severity": 2,
+      "message": "'location' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 58,
+      "severity": 2,
+      "message": "'globalThis' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 59,
+      "severity": 2,
+      "message": "'globalThis' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 60,
+      "severity": 2,
+      "message": "'location' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 61,
+      "severity": 2,
+      "message": "'process' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 61,
+      "severity": 2,
+      "message": "'process' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 71,
+      "severity": 2,
+      "message": "'globalThis' is not defined."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

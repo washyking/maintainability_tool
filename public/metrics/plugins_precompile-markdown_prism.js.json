@@ -1,0 +1,141 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 67.25507476518044,
+    "linesOfCode": 762,
+    "cyclomaticComplexity": 64,
+    "halsteadVolume": 67116.41119224284,
+    "totalRuleViolations": 21
+  },
+  "issues": [
+    {
+      "ruleId": "no-undef",
+      "line": 10,
+      "severity": 2,
+      "message": "'self' is not defined."
+    },
+    {
+      "ruleId": "no-prototype-builtins",
+      "line": 31,
+      "severity": 2,
+      "message": "Do not access Object.prototype method 'hasOwnProperty' from target object."
+    },
+    {
+      "ruleId": "no-prototype-builtins",
+      "line": 52,
+      "severity": 2,
+      "message": "Do not access Object.prototype method 'hasOwnProperty' from target object."
+    },
+    {
+      "ruleId": "no-prototype-builtins",
+      "line": 53,
+      "severity": 2,
+      "message": "Do not access Object.prototype method 'hasOwnProperty' from target object."
+    },
+    {
+      "ruleId": "no-prototype-builtins",
+      "line": 54,
+      "severity": 2,
+      "message": "Do not access Object.prototype method 'hasOwnProperty' from target object."
+    },
+    {
+      "ruleId": "no-prototype-builtins",
+      "line": 64,
+      "severity": 2,
+      "message": "Do not access Object.prototype method 'hasOwnProperty' from target object."
+    },
+    {
+      "ruleId": "no-cond-assign",
+      "line": 103,
+      "severity": 2,
+      "message": "Expected a conditional expression and instead saw an assignment."
+    },
+    {
+      "ruleId": "complexity",
+      "line": 111,
+      "severity": 1,
+      "message": "Function 'i' has a complexity of 35. Maximum allowed is 10."
+    },
+    {
+      "ruleId": "no-prototype-builtins",
+      "line": 112,
+      "severity": 2,
+      "message": "Do not access Object.prototype method 'hasOwnProperty' from target object."
+    },
+    {
+      "ruleId": "no-useless-escape",
+      "line": 231,
+      "severity": 2,
+      "message": "Unnecessary escape character: \\/."
+    },
+    {
+      "ruleId": "no-useless-escape",
+      "line": 231,
+      "severity": 2,
+      "message": "Unnecessary escape character: \\/."
+    },
+    {
+      "ruleId": "no-useless-escape",
+      "line": 235,
+      "severity": 2,
+      "message": "Unnecessary escape character: \\/."
+    },
+    {
+      "ruleId": "no-useless-escape",
+      "line": 238,
+      "severity": 2,
+      "message": "Unnecessary escape character: \\/."
+    },
+    {
+      "ruleId": "no-useless-escape",
+      "line": 252,
+      "severity": 2,
+      "message": "Unnecessary escape character: \\/."
+    },
+    {
+      "ruleId": "no-useless-escape",
+      "line": 254,
+      "severity": 2,
+      "message": "Unnecessary escape character: \\/."
+    },
+    {
+      "ruleId": "no-useless-escape",
+      "line": 412,
+      "severity": 2,
+      "message": "Unnecessary escape character: \\[."
+    },
+    {
+      "ruleId": "no-useless-escape",
+      "line": 424,
+      "severity": 2,
+      "message": "Unnecessary escape character: \\[."
+    },
+    {
+      "ruleId": "no-useless-escape",
+      "line": 517,
+      "severity": 2,
+      "message": "Unnecessary escape character: \\/."
+    },
+    {
+      "ruleId": "complexity",
+      "line": 544,
+      "severity": 1,
+      "message": "Function has a complexity of 29. Maximum allowed is 10."
+    },
+    {
+      "ruleId": "no-useless-escape",
+      "line": 667,
+      "severity": 2,
+      "message": "Unnecessary escape character: \\/."
+    },
+    {
+      "ruleId": "no-useless-escape",
+      "line": 668,
+      "severity": 2,
+      "message": "Unnecessary escape character: \\[."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

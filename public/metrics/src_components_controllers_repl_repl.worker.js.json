@@ -1,0 +1,69 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 130,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 4114.938906806734,
+    "totalRuleViolations": 9
+  },
+  "issues": [
+    {
+      "ruleId": "no-undef",
+      "line": 21,
+      "severity": 2,
+      "message": "'btoa' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 100,
+      "severity": 2,
+      "message": "'URL' is not defined."
+    },
+    {
+      "ruleId": "no-empty",
+      "line": 101,
+      "severity": 2,
+      "message": "Empty block statement."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 106,
+      "severity": 2,
+      "message": "'URL' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 119,
+      "severity": 2,
+      "message": "'URL' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 140,
+      "severity": 2,
+      "message": "'Map' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 142,
+      "severity": 2,
+      "message": "'URL' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 144,
+      "severity": 2,
+      "message": "'fetch' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 166,
+      "severity": 2,
+      "message": "'console' is not defined."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

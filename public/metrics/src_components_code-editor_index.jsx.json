@@ -1,0 +1,99 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 91,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 3059.752533854574,
+    "totalRuleViolations": 14
+  },
+  "issues": [
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 44,
+      "severity": 2,
+      "message": "Dependency \"props\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 44,
+      "severity": 2,
+      "message": "Dependency \"useEffect\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 44,
+      "severity": 2,
+      "message": "Dependency \"editorParent\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 44,
+      "severity": 2,
+      "message": "Dependency \"cx\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 44,
+      "severity": 2,
+      "message": "Dependency \"style\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 48,
+      "severity": 2,
+      "message": "Dependency \"props\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 48,
+      "severity": 2,
+      "message": "Dependency \"useEffect\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 48,
+      "severity": 2,
+      "message": "Dependency \"editorParent\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 48,
+      "severity": 2,
+      "message": "Dependency \"cx\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 48,
+      "severity": 2,
+      "message": "Dependency \"style\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 90,
+      "severity": 2,
+      "message": "Dependency \"editorParent\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 90,
+      "severity": 2,
+      "message": "Dependency \"cx\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 90,
+      "severity": 2,
+      "message": "Dependency \"style\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 90,
+      "severity": 2,
+      "message": "Dependency \"props\" is missing in useEffect."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

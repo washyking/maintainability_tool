@@ -1,0 +1,33 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 73,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 1703.479952102797,
+    "totalRuleViolations": 3
+  },
+  "issues": [
+    {
+      "ruleId": "no-unused-vars",
+      "line": 59,
+      "severity": 2,
+      "message": "'SidebarGroup' is defined but never used."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 65,
+      "severity": 2,
+      "message": "'SidebarNavLink' is defined but never used."
+    },
+    {
+      "ruleId": "custom/avoid-anonymous-functions-in-jsx",
+      "line": 72,
+      "severity": 1,
+      "message": "Avoid anonymous functions in JSX. Use a named function or useCallback instead."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

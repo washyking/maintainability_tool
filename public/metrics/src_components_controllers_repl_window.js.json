@@ -1,0 +1,27 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 1,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 6.339850002884624,
+    "totalRuleViolations": 2
+  },
+  "issues": [
+    {
+      "ruleId": "no-undef",
+      "line": 2,
+      "severity": 2,
+      "message": "'global' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 2,
+      "severity": 2,
+      "message": "'global' is not defined."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

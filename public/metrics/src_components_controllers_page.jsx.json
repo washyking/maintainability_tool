@@ -1,0 +1,27 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 11,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 233.83308753677895,
+    "totalRuleViolations": 2
+  },
+  "issues": [
+    {
+      "ruleId": "no-unused-vars",
+      "line": 3,
+      "severity": 2,
+      "message": "'NotFound' is defined but never used."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 4,
+      "severity": 2,
+      "message": "'DocLayout' is defined but never used."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 22,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 383.78049861507816,
+    "totalRuleViolations": 1
+  },
+  "issues": [
+    {
+      "ruleId": "no-undef",
+      "line": 5,
+      "severity": 2,
+      "message": "'location' is not defined."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

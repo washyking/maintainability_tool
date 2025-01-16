@@ -1,0 +1,27 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 60,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 1382.4211166000327,
+    "totalRuleViolations": 2
+  },
+  "issues": [
+    {
+      "ruleId": "no-unused-vars",
+      "line": 1,
+      "severity": 2,
+      "message": "'Time' is defined but never used."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 49,
+      "severity": 2,
+      "message": "'AuthorLinks' is defined but never used."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

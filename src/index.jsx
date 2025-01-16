@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import ESLintPage from './pages/ESlintPage';
 import SonarQubePage from './pages/SonarCubePage';
 import ImprovementOverTime from './pages/ImprovementOverTime';
+import InDepthAnalysis from './pages/InDepthAnalysis';
 
 const App = () => (
   <Router>
@@ -15,6 +16,8 @@ const App = () => (
     <Route path="/eslint" component={() => <><Navbar currentPath="/eslint" /><ESLintPage /></>} />
     <Route path="/sonarqube" component={() => <><Navbar currentPath="/sonarqube" /><SonarQubePage /></>} />
     <Route path="/metrics_timeline" component={() => <><Navbar currentPath="/metrics_timeline" /><ImprovementOverTime /></>} />
+    <Route path="/file_analysis" component={() => <><Navbar currentPath="/file_analysis" /><InDepthAnalysis /></>} />
+    
   </Router>
 );
 

@@ -1,0 +1,45 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 67,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 2128.6417017853273,
+    "totalRuleViolations": 5
+  },
+  "issues": [
+    {
+      "ruleId": "no-unused-vars",
+      "line": 4,
+      "severity": 2,
+      "message": "'NotFound' is defined but never used."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 6,
+      "severity": 2,
+      "message": "'MarkdownRegion' is defined but never used."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 7,
+      "severity": 2,
+      "message": "'Sidebar' is defined but never used."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 8,
+      "severity": 2,
+      "message": "'Footer' is defined but never used."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 46,
+      "severity": 2,
+      "message": "'OldDocsWarning' is defined but never used."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

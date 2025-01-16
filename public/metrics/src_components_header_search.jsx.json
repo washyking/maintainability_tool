@@ -1,0 +1,33 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 24,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 631.5631060779126,
+    "totalRuleViolations": 3
+  },
+  "issues": [
+    {
+      "ruleId": "no-unused-vars",
+      "line": 1,
+      "severity": 2,
+      "message": "'ErrorBoundary' is defined but never used."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 5,
+      "severity": 2,
+      "message": "'DocSearch' is assigned a value but never used."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 13,
+      "severity": 2,
+      "message": "'URL' is not defined."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

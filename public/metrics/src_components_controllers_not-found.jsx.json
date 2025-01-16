@@ -1,0 +1,27 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 17,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 417.78636558097116,
+    "totalRuleViolations": 2
+  },
+  "issues": [
+    {
+      "ruleId": "no-unused-vars",
+      "line": 2,
+      "severity": 2,
+      "message": "'Footer' is defined but never used."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 3,
+      "severity": 2,
+      "message": "'MarkdownRegion' is defined but never used."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 29,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 785.3349927751435,
+    "totalRuleViolations": 4
+  },
+  "issues": [
+    {
+      "ruleId": "no-unused-vars",
+      "line": 3,
+      "severity": 2,
+      "message": "'NotFound' is defined but never used."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 4,
+      "severity": 2,
+      "message": "'MarkdownRegion' is defined but never used."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 5,
+      "severity": 2,
+      "message": "'Footer' is defined but never used."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 20,
+      "severity": 2,
+      "message": "'BlogLayout' is defined but never used."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

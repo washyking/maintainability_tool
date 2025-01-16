@@ -1,0 +1,14 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 0,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 0,
+    "totalRuleViolations": 0
+  },
+  "issues": [],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

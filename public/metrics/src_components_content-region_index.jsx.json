@@ -1,0 +1,93 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 80,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 2673.494775292789,
+    "totalRuleViolations": 13
+  },
+  "issues": [
+    {
+      "ruleId": "no-unused-vars",
+      "line": 2,
+      "severity": 2,
+      "message": "'Markup' is defined but never used."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 6,
+      "severity": 2,
+      "message": "'TocContext' is defined but never used."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 13,
+      "severity": 2,
+      "message": "'URL' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 13,
+      "severity": 2,
+      "message": "'location' is not defined."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 21,
+      "severity": 2,
+      "message": "'SiblingNav' is defined but never used."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 51,
+      "severity": 2,
+      "message": "Dependency \"props\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 51,
+      "severity": 2,
+      "message": "Dependency \"hasNav\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 51,
+      "severity": 2,
+      "message": "Dependency \"content\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 51,
+      "severity": 2,
+      "message": "Dependency \"components\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 51,
+      "severity": 2,
+      "message": "Dependency \"style\" is missing in useEffect."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 52,
+      "severity": 2,
+      "message": "'location' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 55,
+      "severity": 2,
+      "message": "'location' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 56,
+      "severity": 2,
+      "message": "'location' is not defined."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

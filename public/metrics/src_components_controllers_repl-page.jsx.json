@@ -1,0 +1,33 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 52,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 1484.371442997095,
+    "totalRuleViolations": 3
+  },
+  "issues": [
+    {
+      "ruleId": "no-unused-vars",
+      "line": 2,
+      "severity": 2,
+      "message": "'Repl' is defined but never used."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 48,
+      "severity": 2,
+      "message": "'localStorage' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 49,
+      "severity": 2,
+      "message": "'localStorage' is not defined."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

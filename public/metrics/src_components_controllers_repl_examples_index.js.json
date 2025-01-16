@@ -1,0 +1,21 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 90,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 1937.356450452886,
+    "totalRuleViolations": 1
+  },
+  "issues": [
+    {
+      "ruleId": "no-undef",
+      "line": 96,
+      "severity": 2,
+      "message": "'fetch' is not defined."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

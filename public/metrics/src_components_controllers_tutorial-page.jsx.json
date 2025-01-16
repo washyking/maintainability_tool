@@ -1,0 +1,63 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 39,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 1075.3329067155867,
+    "totalRuleViolations": 8
+  },
+  "issues": [
+    {
+      "ruleId": "no-unused-vars",
+      "line": 3,
+      "severity": 2,
+      "message": "'Tutorial' is defined but never used."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 4,
+      "severity": 2,
+      "message": "'SolutionProvider' is defined but never used."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 5,
+      "severity": 2,
+      "message": "'NotFound' is defined but never used."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 23,
+      "severity": 2,
+      "message": "'TutorialLayout' is defined but never used."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 28,
+      "severity": 2,
+      "message": "Dependency \"meta\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 28,
+      "severity": 2,
+      "message": "Dependency \"path\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 28,
+      "severity": 2,
+      "message": "Dependency \"style\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 28,
+      "severity": 2,
+      "message": "Dependency \"html\" is missing in useEffect."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

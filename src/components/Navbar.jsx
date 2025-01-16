@@ -17,6 +17,9 @@ const Navbar = ({ currentPath }) => { // Accept currentPath as a prop
         <li className={currentPath === '/metrics_timeline' ? 'active' : ''}>
           <Link href="/metrics_timeline">Metrics Timeline</Link>
         </li>
+        <li className={currentPath === '/file_analysis' ? 'active' : ''}>
+          <Link href="/file_analysis">File Analysis</Link>
+        </li>
         <li className={currentPath === '/sonarqube' ? 'active' : ''}>
           <Link href="/sonarqube">SonarQube(remove)</Link>
         </li>

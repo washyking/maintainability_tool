@@ -1,0 +1,45 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 57,
+    "cyclomaticComplexity": 13,
+    "halsteadVolume": 2200.7381996557597,
+    "totalRuleViolations": 5
+  },
+  "issues": [
+    {
+      "ruleId": "no-unused-vars",
+      "line": 5,
+      "severity": 2,
+      "message": "'_context' is defined but never used."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 6,
+      "severity": 2,
+      "message": "'URL' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 10,
+      "severity": 2,
+      "message": "'Response' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 44,
+      "severity": 2,
+      "message": "'fetch' is not defined."
+    },
+    {
+      "ruleId": "complexity",
+      "line": 48,
+      "severity": 1,
+      "message": "Arrow function has a complexity of 13. Maximum allowed is 10."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

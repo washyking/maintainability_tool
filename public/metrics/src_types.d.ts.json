@@ -1,0 +1,21 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 13,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 235.53074858920888,
+    "totalRuleViolations": 1
+  },
+  "issues": [
+    {
+      "ruleId": "Unknown Rule",
+      "line": 3,
+      "severity": 2,
+      "message": "Parsing error: Missing semicolon. (3:7)"
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

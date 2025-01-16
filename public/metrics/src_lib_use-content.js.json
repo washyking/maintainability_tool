@@ -1,0 +1,51 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 42,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 818.9147427955946,
+    "totalRuleViolations": 6
+  },
+  "issues": [
+    {
+      "ruleId": "no-undef",
+      "line": 24,
+      "severity": 2,
+      "message": "'globalThis' is not defined."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 26,
+      "severity": 2,
+      "message": "Dependency \"title\" is missing in useEffect."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 28,
+      "severity": 2,
+      "message": "'document' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 39,
+      "severity": 2,
+      "message": "'globalThis' is not defined."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 41,
+      "severity": 2,
+      "message": "Dependency \"text\" is missing in useEffect."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 42,
+      "severity": 2,
+      "message": "'document' is not defined."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

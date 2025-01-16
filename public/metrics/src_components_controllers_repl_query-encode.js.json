@@ -1,0 +1,45 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 18,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 370,
+    "totalRuleViolations": 5
+  },
+  "issues": [
+    {
+      "ruleId": "no-undef",
+      "line": 7,
+      "severity": 2,
+      "message": "'TextEncoder' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 8,
+      "severity": 2,
+      "message": "'btoa' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 17,
+      "severity": 2,
+      "message": "'Uint8Array' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 17,
+      "severity": 2,
+      "message": "'atob' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 18,
+      "severity": 2,
+      "message": "'TextDecoder' is not defined."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

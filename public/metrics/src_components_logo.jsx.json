@@ -1,0 +1,57 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 101,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 10479.499902427375,
+    "totalRuleViolations": 7
+  },
+  "issues": [
+    {
+      "ruleId": "no-undef",
+      "line": 25,
+      "severity": 2,
+      "message": "'requestAnimationFrame' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 25,
+      "severity": 2,
+      "message": "'setTimeout' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 35,
+      "severity": 2,
+      "message": "'setTimeout' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 39,
+      "severity": 2,
+      "message": "'clearTimeout' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 40,
+      "severity": 2,
+      "message": "'cancelAnimationFrame' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 40,
+      "severity": 2,
+      "message": "'clearTimeout' is not defined."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 75,
+      "severity": 2,
+      "message": "'component' is defined but never used."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

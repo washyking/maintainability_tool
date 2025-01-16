@@ -1,0 +1,57 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 71,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 2046.3317641853816,
+    "totalRuleViolations": 7
+  },
+  "issues": [
+    {
+      "ruleId": "no-undef",
+      "line": 32,
+      "severity": 2,
+      "message": "'navigator' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 32,
+      "severity": 2,
+      "message": "'navigator' is not defined."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 52,
+      "severity": 2,
+      "message": "Dependency \"setAndUpdateHtmlAttr\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 52,
+      "severity": 2,
+      "message": "Dependency \"lang\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 52,
+      "severity": 2,
+      "message": "Dependency \"children\" is missing in useEffect."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 53,
+      "severity": 2,
+      "message": "'document' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 58,
+      "severity": 2,
+      "message": "'document' is not defined."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

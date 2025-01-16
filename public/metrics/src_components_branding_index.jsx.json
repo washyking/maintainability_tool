@@ -1,0 +1,21 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 39,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 738.7474869206902,
+    "totalRuleViolations": 1
+  },
+  "issues": [
+    {
+      "ruleId": "no-unused-vars",
+      "line": 14,
+      "severity": 2,
+      "message": "'LogoVariation' is defined but never used."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

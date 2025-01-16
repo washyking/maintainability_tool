@@ -1,0 +1,471 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 89.9467803109289,
+    "linesOfCode": 293,
+    "cyclomaticComplexity": 11,
+    "halsteadVolume": 8438.817233511296,
+    "totalRuleViolations": 76
+  },
+  "issues": [
+    {
+      "ruleId": "no-unused-vars",
+      "line": 13,
+      "severity": 2,
+      "message": "'ErrorOverlay' is defined but never used."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 18,
+      "severity": 2,
+      "message": "'Splitter' is defined but never used."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 20,
+      "severity": 2,
+      "message": "'MarkdownRegion' is defined but never used."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 23,
+      "severity": 2,
+      "message": "'Set' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 24,
+      "severity": 2,
+      "message": "'Set' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 25,
+      "severity": 2,
+      "message": "'Set' is not defined."
+    },
+    {
+      "ruleId": "complexity",
+      "line": 46,
+      "severity": 1,
+      "message": "Function 'Tutorial' has a complexity of 11. Maximum allowed is 10."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 67,
+      "severity": 2,
+      "message": "'Runner' is assigned a value but never used."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 67,
+      "severity": 2,
+      "message": "'CodeEditor' is assigned a value but never used."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 67,
+      "severity": 2,
+      "message": "'Promise' is not defined."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 72,
+      "severity": 2,
+      "message": "Dependency \"meta\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 72,
+      "severity": 2,
+      "message": "Dependency \"useEffect\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 72,
+      "severity": 2,
+      "message": "Dependency \"editorCode\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 72,
+      "severity": 2,
+      "message": "Dependency \"useResult\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 72,
+      "severity": 2,
+      "message": "Dependency \"useRealm\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 72,
+      "severity": 2,
+      "message": "Dependency \"useError\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 72,
+      "severity": 2,
+      "message": "Dependency \"onError\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 72,
+      "severity": 2,
+      "message": "Dependency \"onSuccess\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 72,
+      "severity": 2,
+      "message": "Dependency \"onRealm\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 72,
+      "severity": 2,
+      "message": "Dependency \"help\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 72,
+      "severity": 2,
+      "message": "Dependency \"cx\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 72,
+      "severity": 2,
+      "message": "Dependency \"style\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 72,
+      "severity": 2,
+      "message": "Dependency \"solutionCtx\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 72,
+      "severity": 2,
+      "message": "Dependency \"showCode\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 72,
+      "severity": 2,
+      "message": "Dependency \"undefined\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 72,
+      "severity": 2,
+      "message": "Dependency \"error\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 72,
+      "severity": 2,
+      "message": "Dependency \"parseStackTrace\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 72,
+      "severity": 2,
+      "message": "Dependency \"runner\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 72,
+      "severity": 2,
+      "message": "Dependency \"runnerCode\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 72,
+      "severity": 2,
+      "message": "Dependency \"hasCode\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 72,
+      "severity": 2,
+      "message": "Dependency \"toggleCode\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 72,
+      "severity": 2,
+      "message": "Dependency \"url\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 72,
+      "severity": 2,
+      "message": "Dependency \"setEditorCode\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 72,
+      "severity": 2,
+      "message": "Dependency \"content\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 72,
+      "severity": 2,
+      "message": "Dependency \"html\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 72,
+      "severity": 2,
+      "message": "Dependency \"TUTORIAL_COMPONENTS\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 81,
+      "severity": 2,
+      "message": "Dependency \"editorCode\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 81,
+      "severity": 2,
+      "message": "Dependency \"useResult\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 81,
+      "severity": 2,
+      "message": "Dependency \"useRealm\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 81,
+      "severity": 2,
+      "message": "Dependency \"useError\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 81,
+      "severity": 2,
+      "message": "Dependency \"onError\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 81,
+      "severity": 2,
+      "message": "Dependency \"onSuccess\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 81,
+      "severity": 2,
+      "message": "Dependency \"onRealm\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 81,
+      "severity": 2,
+      "message": "Dependency \"help\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 81,
+      "severity": 2,
+      "message": "Dependency \"cx\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 81,
+      "severity": 2,
+      "message": "Dependency \"style\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 81,
+      "severity": 2,
+      "message": "Dependency \"meta\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 81,
+      "severity": 2,
+      "message": "Dependency \"solutionCtx\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 81,
+      "severity": 2,
+      "message": "Dependency \"showCode\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 81,
+      "severity": 2,
+      "message": "Dependency \"undefined\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 81,
+      "severity": 2,
+      "message": "Dependency \"error\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 81,
+      "severity": 2,
+      "message": "Dependency \"parseStackTrace\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 81,
+      "severity": 2,
+      "message": "Dependency \"runner\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 81,
+      "severity": 2,
+      "message": "Dependency \"runnerCode\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 81,
+      "severity": 2,
+      "message": "Dependency \"hasCode\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 81,
+      "severity": 2,
+      "message": "Dependency \"toggleCode\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 81,
+      "severity": 2,
+      "message": "Dependency \"url\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 81,
+      "severity": 2,
+      "message": "Dependency \"setEditorCode\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 81,
+      "severity": 2,
+      "message": "Dependency \"content\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 81,
+      "severity": 2,
+      "message": "Dependency \"html\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 81,
+      "severity": 2,
+      "message": "Dependency \"TUTORIAL_COMPONENTS\" is missing in useEffect."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 82,
+      "severity": 2,
+      "message": "'setTimeout' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 85,
+      "severity": 2,
+      "message": "'clearTimeout' is not defined."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 90,
+      "severity": 2,
+      "message": "Dependency \"fn\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 96,
+      "severity": 2,
+      "message": "Dependency \"fn\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 106,
+      "severity": 2,
+      "message": "Dependency \"fn\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/limit-prop-drill-depth",
+      "line": 203,
+      "severity": 1,
+      "message": "Props are drilled beyond 4 levels. Consider using Context API or global state."
+    },
+    {
+      "ruleId": "custom/limit-prop-drill-depth",
+      "line": 219,
+      "severity": 1,
+      "message": "Props are drilled beyond 4 levels. Consider using Context API or global state."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 227,
+      "severity": 2,
+      "message": "'ButtonContainer' is defined but never used."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 258,
+      "severity": 2,
+      "message": "'TutorialSetupBlock' is defined but never used."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 261,
+      "severity": 2,
+      "message": "'Setup' is assigned a value but never used."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 316,
+      "severity": 2,
+      "message": "Dependency \"solved\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 316,
+      "severity": 2,
+      "message": "Dependency \"ref\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 316,
+      "severity": 2,
+      "message": "Dependency \"style\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 316,
+      "severity": 2,
+      "message": "Dependency \"children\" is missing in useEffect."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 318,
+      "severity": 2,
+      "message": "'requestAnimationFrame' is not defined."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

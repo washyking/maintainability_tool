@@ -1,0 +1,27 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 75,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 3263.5082727133768,
+    "totalRuleViolations": 2
+  },
+  "issues": [
+    {
+      "ruleId": "no-undef",
+      "line": 28,
+      "severity": 2,
+      "message": "'fetch' is not defined."
+    },
+    {
+      "ruleId": "custom/limit-prop-drill-depth",
+      "line": 47,
+      "severity": 1,
+      "message": "Props are drilled beyond 4 levels. Consider using Context API or global state."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

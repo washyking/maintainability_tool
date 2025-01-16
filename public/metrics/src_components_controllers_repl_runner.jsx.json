@@ -1,0 +1,111 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 93.59937186954807,
+    "linesOfCode": 202,
+    "cyclomaticComplexity": 16,
+    "halsteadVolume": 6420.045363186553,
+    "totalRuleViolations": 16
+  },
+  "issues": [
+    {
+      "ruleId": "no-undef",
+      "line": 7,
+      "severity": 2,
+      "message": "'fetch' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 11,
+      "severity": 2,
+      "message": "'Worker' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 11,
+      "severity": 2,
+      "message": "'URL' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 88,
+      "severity": 2,
+      "message": "'Promise' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 101,
+      "severity": 2,
+      "message": "'Promise' is not defined."
+    },
+    {
+      "ruleId": "complexity",
+      "line": 137,
+      "severity": 1,
+      "message": "Async method 'execute' has a complexity of 16. Maximum allowed is 10."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 146,
+      "severity": 2,
+      "message": "'URLSearchParams' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 146,
+      "severity": 2,
+      "message": "'location' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 147,
+      "severity": 2,
+      "message": "'document' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 148,
+      "severity": 2,
+      "message": "'document' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 148,
+      "severity": 2,
+      "message": "'location' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 152,
+      "severity": 2,
+      "message": "'confirm' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 172,
+      "severity": 2,
+      "message": "'console' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 218,
+      "severity": 2,
+      "message": "'document' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 221,
+      "severity": 2,
+      "message": "'document' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 225,
+      "severity": 2,
+      "message": "'console' is not defined."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

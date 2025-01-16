@@ -1,0 +1,207 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 134,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 4256.181986723146,
+    "totalRuleViolations": 32
+  },
+  "issues": [
+    {
+      "ruleId": "no-unused-vars",
+      "line": 3,
+      "severity": 2,
+      "message": "'Splitter' is defined but never used."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 5,
+      "severity": 2,
+      "message": "'ErrorOverlay' is defined but never used."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 32,
+      "severity": 2,
+      "message": "'Runner' is assigned a value but never used."
+    },
+    {
+      "ruleId": "no-unused-vars",
+      "line": 32,
+      "severity": 2,
+      "message": "'CodeEditor' is assigned a value but never used."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 32,
+      "severity": 2,
+      "message": "'Promise' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 52,
+      "severity": 2,
+      "message": "'location' is not defined."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 57,
+      "severity": 2,
+      "message": "Dependency \"editorCode\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 57,
+      "severity": 2,
+      "message": "Dependency \"share\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 57,
+      "severity": 2,
+      "message": "Dependency \"onRealm\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 57,
+      "severity": 2,
+      "message": "Dependency \"style\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 57,
+      "severity": 2,
+      "message": "Dependency \"query\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 57,
+      "severity": 2,
+      "message": "Dependency \"applyExample\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 57,
+      "severity": 2,
+      "message": "Dependency \"EXAMPLES\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 57,
+      "severity": 2,
+      "message": "Dependency \"copied\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 57,
+      "severity": 2,
+      "message": "Dependency \"error\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 57,
+      "severity": 2,
+      "message": "Dependency \"parseStackTrace\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 57,
+      "severity": 2,
+      "message": "Dependency \"setError\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 57,
+      "severity": 2,
+      "message": "Dependency \"REPL_CSS\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 57,
+      "severity": 2,
+      "message": "Dependency \"runnerCode\" is missing in useEffect."
+    },
+    {
+      "ruleId": "custom/enforce-hooks-dependency-completeness",
+      "line": 57,
+      "severity": 2,
+      "message": "Dependency \"onEditorInput\" is missing in useEffect."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 58,
+      "severity": 2,
+      "message": "'setTimeout' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 61,
+      "severity": 2,
+      "message": "'clearTimeout' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 70,
+      "severity": 2,
+      "message": "'history' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 74,
+      "severity": 2,
+      "message": "'document' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 76,
+      "severity": 2,
+      "message": "'location' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 77,
+      "severity": 2,
+      "message": "'document' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 79,
+      "severity": 2,
+      "message": "'document' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 81,
+      "severity": 2,
+      "message": "'document' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 83,
+      "severity": 2,
+      "message": "'setTimeout' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 86,
+      "severity": 2,
+      "message": "'console' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 91,
+      "severity": 2,
+      "message": "'window' is not defined."
+    },
+    {
+      "ruleId": "custom/avoid-anonymous-functions-in-jsx",
+      "line": 135,
+      "severity": 1,
+      "message": "Avoid anonymous functions in JSX. Use a named function or useCallback instead."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

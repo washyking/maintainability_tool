@@ -1,0 +1,57 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 59,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 1777.0642435324955,
+    "totalRuleViolations": 7
+  },
+  "issues": [
+    {
+      "ruleId": "no-undef",
+      "line": 40,
+      "severity": 2,
+      "message": "'removeEventListener' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 41,
+      "severity": 2,
+      "message": "'removeEventListener' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 42,
+      "severity": 2,
+      "message": "'removeEventListener' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 44,
+      "severity": 2,
+      "message": "'addEventListener' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 45,
+      "severity": 2,
+      "message": "'addEventListener' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 46,
+      "severity": 2,
+      "message": "'addEventListener' is not defined."
+    },
+    {
+      "ruleId": "custom/avoid-anonymous-functions-in-jsx",
+      "line": 51,
+      "severity": 1,
+      "message": "Avoid anonymous functions in JSX. Use a named function or useCallback instead."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

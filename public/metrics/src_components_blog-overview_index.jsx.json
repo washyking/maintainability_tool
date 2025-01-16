@@ -1,0 +1,21 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 35,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 1133.7128379262033,
+    "totalRuleViolations": 1
+  },
+  "issues": [
+    {
+      "ruleId": "no-unused-vars",
+      "line": 4,
+      "severity": 2,
+      "message": "'Time' is defined but never used."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

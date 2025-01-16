@@ -1,0 +1,27 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 34,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 940.0179811042351,
+    "totalRuleViolations": 2
+  },
+  "issues": [
+    {
+      "ruleId": "no-undef",
+      "line": 17,
+      "severity": 2,
+      "message": "'URL' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 21,
+      "severity": 2,
+      "message": "'__dirname' is not defined."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

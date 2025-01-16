@@ -1,0 +1,21 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 10,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 246.1243780580604,
+    "totalRuleViolations": 1
+  },
+  "issues": [
+    {
+      "ruleId": "no-prototype-builtins",
+      "line": 7,
+      "severity": 2,
+      "message": "Do not access Object.prototype method 'hasOwnProperty' from target object."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 39,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 987.6748332105767,
+    "totalRuleViolations": 1
+  },
+  "issues": [
+    {
+      "ruleId": "no-undef",
+      "line": 13,
+      "severity": 2,
+      "message": "'document' is not defined."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}

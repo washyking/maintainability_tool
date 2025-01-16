@@ -1,0 +1,33 @@
+{
+  "metrics": {
+    "maintainabilityIndex": 100,
+    "linesOfCode": 9,
+    "cyclomaticComplexity": 0,
+    "halsteadVolume": 209.59328607595296,
+    "totalRuleViolations": 3
+  },
+  "issues": [
+    {
+      "ruleId": "no-undef",
+      "line": 2,
+      "severity": 2,
+      "message": "'window' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 3,
+      "severity": 2,
+      "message": "'window' is not defined."
+    },
+    {
+      "ruleId": "no-undef",
+      "line": 5,
+      "severity": 2,
+      "message": "'setTimeout' is not defined."
+    }
+  ],
+  "dependencies": {
+    "imports": [],
+    "exports": []
+  }
+}
